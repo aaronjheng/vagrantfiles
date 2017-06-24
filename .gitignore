@@ -1,0 +1,6 @@
+centos/*
+debian/*
+ubuntu/*
+*/**/.DS_Store
+!*/**/Vagrantfile
+!*/**/provision.sh
