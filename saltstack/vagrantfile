@@ -8,6 +8,7 @@ Vagrant.configure("2") do |config|
 
     config.vm.define :master do |master|
         master.vm.provider "virtualbox" do |vb|
+            vb.gui = false
             vb.memory = 512
             vb.cpus = 2
             vb.name = "saltmaster"
@@ -21,6 +22,7 @@ Vagrant.configure("2") do |config|
 
     config.vm.define :minion1 do |minion|
         minion.vm.provider "virtualbox" do |vb|
+            vb.gui = false
             vb.memory = 512
             vb.cpus = 2
             vb.name = "saltminion1"
@@ -34,6 +36,7 @@ Vagrant.configure("2") do |config|
 
     config.vm.define :minion2 do |minion|
         minion.vm.provider "virtualbox" do |vb|
+            vb.gui = false
             vb.memory = 512
             vb.cpus = 2
             vb.name = "saltminion2"
@@ -47,6 +50,7 @@ Vagrant.configure("2") do |config|
 
     config.vm.define :minion3 do |minion|
         minion.vm.provider "virtualbox" do |vb|
+            vb.gui = false
             vb.memory = 512
             vb.cpus = 2
             vb.name = "saltminion3"
