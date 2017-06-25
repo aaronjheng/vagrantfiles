@@ -2,6 +2,7 @@ centos/*
 debian/*
 ubuntu/*
 saltstack/*
+freebsd/*
 */**/.DS_Store
 !*/**/Vagrantfile
 !*/**/provision.sh
