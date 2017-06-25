@@ -1,0 +1,61 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+
+    config.vm.box = "debian/stretch64"
+    config.vm.provision "shell", path: "provision.sh"
+
+    config.vm.define :master do |master|
+        master.vm.provider "virtualbox" do |vb|
+            vb.memory = 512
+            vb.cpus = 2
+            vb.name = "saltmaster"
+        end
+        master.vm.hostname = "saltmaster"
+        master.vm.network "private_network", ip: "192.168.3.70"
+        master.vm.provision "shell", inline: <<-SHELL
+            apt-get install -y salt-master
+        SHELL
+    end
+
+    config.vm.define :minion1 do |minion|
+        minion.vm.provider "virtualbox" do |vb|
+            vb.memory = 512
+            vb.cpus = 2
+            vb.name = "saltminion1"
+        end
+        minion.vm.hostname = "saltminion1"
+        minion.vm.network "private_network", ip: "192.168.3.71"
+        minion.vm.provision "shell", inline: <<-SHELL
+            apt-get install -y salt-minion
+        SHELL
+    end
+
+    config.vm.define :minion2 do |minion|
+        minion.vm.provider "virtualbox" do |vb|
+            vb.memory = 512
+            vb.cpus = 2
+            vb.name = "saltminion2"
+        end
+        minion.vm.hostname = "saltminion2"
+        minion.vm.network "private_network", ip: "192.168.3.72"
+        minion.vm.provision "shell", inline: <<-SHELL
+            apt-get install -y salt-minion
+        SHELL
+    end
+
+    config.vm.define :minion3 do |minion|
+        minion.vm.provider "virtualbox" do |vb|
+            vb.memory = 512
+            vb.cpus = 2
+            vb.name = "saltminion3"
+        end
+        minion.vm.hostname = "saltminion3"
+        minion.vm.network "private_network", ip: "192.168.3.73"
+        minion.vm.provision "shell", inline: <<-SHELL
+            apt-get install -y salt-minion
+        SHELL
+    end
+
+end

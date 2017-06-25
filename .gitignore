@@ -1,6 +1,7 @@
 centos/*
 debian/*
 ubuntu/*
+saltstack/*
 */**/.DS_Store
 !*/**/Vagrantfile
 !*/**/provision.sh
