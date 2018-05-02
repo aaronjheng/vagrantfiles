@@ -4,3 +4,4 @@ ubuntu/*
 */**/.DS_Store
 !*/**/Vagrantfile
 !*/**/provision.sh
+.vscode/
