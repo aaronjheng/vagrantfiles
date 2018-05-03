@@ -14,7 +14,7 @@ deb-src http://mirrors.aliyun.com/debian-security/ $version/updates main contrib
 deb http://mirrors.aliyun.com/debian/ $version-updates main contrib
 deb-src http://mirrors.aliyun.com/debian/ $version-updates main contrib
 
-deb http://mirrors.aliyun.com/debian/ stretch-backports main contrib
+deb http://mirrors.aliyun.com/debian/ $version-backports main contrib
 deb-src http://mirrors.aliyun.com/debian/ $version-backports main contrib
 SOURCES
 
