@@ -18,5 +18,5 @@ deb http://mirrors.aliyun.com/debian/ $version-backports main contrib
 deb-src http://mirrors.aliyun.com/debian/ $version-backports main contrib
 SOURCES
 
-apt update && apt install -y vim
+apt-get update && apt-get install -y vim
 update-alternatives --set editor /usr/bin/vim.basic
