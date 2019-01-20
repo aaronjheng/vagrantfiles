@@ -1,6 +1,5 @@
 #!/bin/bash
-
-set -ex
+set -e
 
 cat > /etc/yum.repos.d/CentOS-Base.repo << 'SOURCES'
 [base]
