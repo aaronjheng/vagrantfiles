@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-version=xenial
+version=bionic
 
 cat > /etc/apt/sources.list << SOURCES
 deb http://mirrors.aliyun.com/ubuntu/ $version main universe
