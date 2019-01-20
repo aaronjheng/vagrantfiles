@@ -13,9 +13,6 @@ deb-src http://mirrors.aliyun.com/debian-security/ $version/updates main contrib
 
 deb http://mirrors.aliyun.com/debian/ $version-updates main contrib
 deb-src http://mirrors.aliyun.com/debian/ $version-updates main contrib
-
-deb http://mirrors.aliyun.com/debian/ $version-backports main contrib
-deb-src http://mirrors.aliyun.com/debian/ $version-backports main contrib
 SOURCES
 
 apt-get update && apt-get install -y vim

@@ -13,9 +13,6 @@ deb-src http://mirrors.aliyun.com/ubuntu/ $version-security main universe
 
 deb http://mirrors.aliyun.com/ubuntu/ $version-updates main universe
 deb-src http://mirrors.aliyun.com/ubuntu/ $version-updates main universe
-
-deb http://mirrors.aliyun.com/ubuntu/ $version-backports main universe
-deb-src http://mirrors.aliyun.com/ubuntu/ $version-backports main universe
 SOURCES
 
 apt-get update && apt-get install -y vim
