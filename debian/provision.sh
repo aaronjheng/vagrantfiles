@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-dist=stretch
+dist=buster
 
 cat > /etc/apt/sources.list << SOURCES
 deb http://mirrors.aliyun.com/debian/ $dist main contrib
