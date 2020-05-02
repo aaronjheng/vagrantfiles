@@ -34,15 +34,6 @@ baseurl=http://mirrors.aliyun.com/centos/$releasever/centosplus/$basearch/
 gpgcheck=1
 enabled=0
 gpgkey=http://mirrors.aliyun.com/centos/RPM-GPG-KEY-CentOS-$releasever
-
-#contrib - packages by Centos Users
-[contrib]
-name=CentOS-$releasever - Contrib - mirrors.aliyun.com
-failovermethod=priority
-baseurl=http://mirrors.aliyun.com/centos/$releasever/contrib/$basearch/
-gpgcheck=1
-enabled=0
-gpgkey=http://mirrors.aliyun.com/centos/RPM-GPG-KEY-CentOS-$releasever
 SOURCES
 
 cat >/etc/yum.repos.d/epel.repo <<'SOURCES'
