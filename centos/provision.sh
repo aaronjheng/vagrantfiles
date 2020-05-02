@@ -1,7 +1,8 @@
 #!/bin/bash
+
 set -e
 
-cat > /etc/yum.repos.d/CentOS-Base.repo << 'SOURCES'
+cat >/etc/yum.repos.d/CentOS-Base.repo <<'SOURCES'
 [base]
 name=CentOS-$releasever - Base - mirrors.aliyun.com
 failovermethod=priority
@@ -44,7 +45,7 @@ enabled=0
 gpgkey=http://mirrors.aliyun.com/centos/RPM-GPG-KEY-CentOS-$releasever
 SOURCES
 
-cat > /etc/yum.repos.d/epel.repo << 'SOURCES'
+cat >/etc/yum.repos.d/epel.repo <<'SOURCES'
 [epel]
 name=Extra Packages for Enterprise Linux $releasever - $basearch
 baseurl=http://mirrors.aliyun.com/epel/$releasever/$basearch

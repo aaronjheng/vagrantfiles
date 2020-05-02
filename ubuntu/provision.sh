@@ -1,7 +1,8 @@
 #!/bin/bash
+
 set -e
 
-dist=bionic
+dist=focal
 
 cat >/etc/apt/sources.list <<SOURCES
 deb http://mirrors.aliyun.com/ubuntu/ $dist main universe
