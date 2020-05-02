@@ -2,7 +2,7 @@
 # vi: set ft=ruby :
 
 Vagrant.configure("2") do |config|
-  config.vm.box = "ubuntu/bionic64"
+  config.vm.box = "ubuntu/focal64"
 
   config.vm.box_check_update = false
 
@@ -15,7 +15,7 @@ Vagrant.configure("2") do |config|
     vb.name = "ubuntu"
   end
 
-  config.vm.hostname = "ubuntu"
+  config.vm.hostname = "ubuntu.vagrant"
 
   config.vm.provision "shell", path: "provision.sh"
 end

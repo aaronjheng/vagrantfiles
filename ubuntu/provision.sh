@@ -3,7 +3,7 @@ set -e
 
 dist=bionic
 
-cat > /etc/apt/sources.list << SOURCES
+cat >/etc/apt/sources.list <<SOURCES
 deb http://mirrors.aliyun.com/ubuntu/ $dist main universe
 deb-src http://mirrors.aliyun.com/ubuntu/ $dist main universe
 
