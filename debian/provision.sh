@@ -4,7 +4,7 @@ set -e
 
 dist=buster
 
-cat > /etc/apt/sources.list << SOURCES
+cat >/etc/apt/sources.list <<SOURCES
 deb http://mirrors.aliyun.com/debian/ $dist main contrib
 deb-src http://mirrors.aliyun.com/debian/ $dist main contrib
 
